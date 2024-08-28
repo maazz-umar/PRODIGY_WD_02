@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html">
+<html lang="en">
 <head>
-    <title>Document</title>
+    <title>Design Stopwatch using HTML CSS and JavaScript</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <button class="play">
-            <i class="fa-regular fa-circle-play" id="icplay"></i>
-        </button>
-        <button class="pause">
-            <i class="fa-regular fa-circle-pause" id="icpause"></i>
-        </button>
-        <button class="stop">
-            <i class="fa-regular fa-circle-stop" id="icstop"></i>
-        </button>
+		<img src="content/Cropped_Image_20240823_032941.jpg" alt="img" id="image">
+        <h1>Stop Watch</h1>
+        <div id="time">
+            <span class="digit" id="hr">
+                00</span>
+            <span class="txt">Hr</span>
+            <span class="digit" id="min">
+                00</span>
+            <span class="txt">Min</span>
+            <span class="digit" id="sec">
+                00</span>
+            <span class="txt">Sec</span>
+            <span class="digit" id="count">
+                00</span>
+        </div>
+        <div id="buttons">
+            <button class="btn" id="start">
+                Start</button>
+            <button class="btn" id="stop">
+                Stop</button>
+            <button class="btn" id="reset">
+                Reset</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,25 +1,67 @@
-*{
-    box-sizing: border-box;
+@font-face {
+    font-family: alegera;
+    src: url(content/Alegreya\ SC.ttf);
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: alegera;
 }
 .container{
     display: flex;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(60vh);
-}
-.play,.pause,.stop{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin: 2%;
-    filter: drop-shadow(5px 5px 10px black);
+    width: 100%;
+    height: 100vh;
+    background-color: #13472E;
 }
-
-#icplay, #icpause, #icstop{
-    font-size: 3rem;
+h1{
+    text-align: center;
+    color: #D09632;
+}
+.digit{
+    font-size: 150px;
+    color: #92B19F;
+}
+.txt{
+    font-size: 30px;
+    color: #92B19F;
+}
+#buttons{
+    margin-top: 50px;
+}
+.btn{
+    width: 100px;
+    padding: 10px 15px;
+    margin: 0px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border-color: #D09632;
+    font-weight: 500;
+}
+#start{
+    background-color: #D09632;
+}
+#stop{
+    background-color: #D09632;
+}
+#reset{
+    background-color: #D09632;
+}
+.btn:hover{
+    box-shadow: 5px 5px 5px black;
+    transition: box-shadow 300ms ;
+}
+.btn:active{
+    width: 108px;
+}
+#image{
+    width: 300px;
+    aspect-ratio: 2/1;
+    position: absolute;
+    left: 40px;
+    top: 20px;
 }
